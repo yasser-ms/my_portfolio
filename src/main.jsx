@@ -4,9 +4,10 @@ import './index.css'
 import App from './App.jsx'
 import UnderConstruction from './underConstraction.jsx'
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/*<App />*/}
-    <UnderConstruction />
+    <App />
+    {/* <UnderConstruction />*/}
   </StrictMode>,
 )
