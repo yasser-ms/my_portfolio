@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -30,6 +30,17 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import profilePic from "./Yasser.jpeg";
+import reactDev from "./ReactDev.jpeg";
+import Networking from "./Networking.jpeg";
+import backendDev from "./Flask.jpeg";
+
+import storeapi from './flaskPostman.png'
+import parking from './parking.png'
+import photogallery from './unsplashapi.png'
+import vaccine from './vaccin.png'
+
+
 export {
   logo,
   backend,
@@ -59,4 +70,12 @@ export {
   carrent,
   jobit,
   tripguide,
+  profilePic,
+  Networking,
+  reactDev,
+  backendDev,
+  storeapi,
+  parking,
+  photogallery,
+  vaccine,
 };

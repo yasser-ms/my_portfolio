@@ -23,7 +23,16 @@ import {
   jobit,
   tripguide,
   threejs,
+    profilePic,
+  reactDev,
+  Networking,
+  backendDev,
+  storeapi,
+  parking,
+  photogallery,
+  vaccine,
 } from "../assets";
+
 
 export const navLinks = [
   {
@@ -40,22 +49,32 @@ export const navLinks = [
   },
 ];
 
+
+
 const services = [
   {
     title: "Web Developer",
     icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
+    image: reactDev,
+    description: "Building modern, responsive web applications using React, Next.js, and Tailwind CSS with focus on user experience and performance."
   },
   {
     title: "Backend Developer",
     icon: backend,
+    image: backendDev,
+    description: "Creating robust APIs and microservices with Spring Boot, Node.js, Docker, and PostgreSQL for scalable applications."
+  },
+    {
+    title: "DevOps Enthusiast",
+    icon: docker,
+    image: profilePic,
+    description: "Setting up CI/CD pipelines, containerization with Docker, Kubernetes, and cloud deployments for efficient workflows."
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Networking",
+    icon: mobile,
+    image: Networking,
+    description: "Configuring networks, firewalls, DNS, and understanding network security protocols and infrastructure."
   },
 ];
 
@@ -196,69 +215,138 @@ const testimonials = [
   },
 ];
 
+
+
 const projects = [
   {
-    name: "Car Rent",
+    name: "Store API",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "RESTful API built with Flask, SQLAlchemy, and JWT Authentication. Features database migrations, Docker containerization, Swagger documentation, and Postman testing. Deployed on Render.",
+    tags: [
+      {
+        name: "flask",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "jwt",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: storeapi,
+    source_code_link: "https://github.com/yasser-ms/Store_API",
+    live_demo_link: "https://store-api-ju13.onrender.com",
+  },
+  {
+    name: "Smart Parking System",
+    description:
+      "Client-server architecture using Java/Python sockets for network communication and database management. Web interface built with HTML, CSS, JavaScript, PHP and PostgreSQL database.",
+    tags: [
+      {
+        name: "java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "php",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: parking,
+    source_code_link: "https://github.com/yasser-ms/Projet_SAE/tree/yasser",
+    live_demo_link: "https://groupea5.alwaysdata.net",
+  },
+  {
+    name: "React Photo Gallery",
+    description:
+      "React/Vite application featuring dark mode, image search via Unsplash API, React Query for data fetching, reusable components, and global state management. Deployed on Netlify.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "vite",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "react-query",
         color: "pink-text-gradient",
       },
+      {
+        name: "api",
+        color: "orange-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: photogallery,
+    source_code_link: "https://github.com/yasser-ms/Unsplash-API",
+    live_demo_link: "https://unsplashapiyasser.netlify.app",
   },
   {
-    name: "Job IT",
+    name: "Vaccine Management App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Intelligent child vaccine management application. Mobile and web app built with Flutter/Dart, Firebase for backend services, and Node.js for server logic. Final year project.",
     tags: [
       {
-        name: "react",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "nodejs",
         color: "pink-text-gradient",
       },
+      {
+        name: "dart",
+        color: "orange-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: vaccine,
+    source_code_link: "https://github.com/yasser-ms",
+    live_demo_link: null,
   },
   {
-    name: "Trip Guide",
+    name: "Enterprise Network",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Design and deployment of a secure enterprise network infrastructure: IPv4, routing, switching, DNS, HTTP/Proxy, NAT, DHCP, SMTP/POP3, and ACL configuration.",
     tags: [
       {
-        name: "nextjs",
+        name: "networking",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "cisco",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "security",
         color: "pink-text-gradient",
       },
+      {
+        name: "infrastructure",
+        color: "orange-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: Networking,
+    source_code_link: "https://github.com/yasser-ms",
+    live_demo_link: null,
   },
 ];
 

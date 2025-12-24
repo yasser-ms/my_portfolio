@@ -138,6 +138,26 @@
   transform: translateZ(0);
 }
 
+/* Glowing tag animation */
+.glow-blue {
+  box-shadow: 0 0 10px #2f80ed, 0 0 20px #2f80ed, 0 0 30px #2f80ed;
+}
+
+.glow-green {
+  box-shadow: 0 0 10px #11998e, 0 0 20px #11998e, 0 0 30px #11998e;
+}
+
+.glow-pink {
+  box-shadow: 0 0 10px #ec008c, 0 0 20px #ec008c, 0 0 30px #ec008c;
+}
+
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 @keyframes mulShdSpin {
 
   0%,
