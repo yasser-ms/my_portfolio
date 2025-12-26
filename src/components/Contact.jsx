@@ -5,10 +5,12 @@ import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
-//template_csuefzd
-//service_tygyz37
-//EA00G0BRU2C3S1KeC
+import dotenv from 'dotenv'
+
+
+
 const Contact = () => {
+
   const formRef = useRef()
   const [form, setForm] = useState({
     name: '',
@@ -26,14 +28,14 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send('service_tygyz37', 'template_csuefzd', {
+    emailjs.send(import.meta.env.SERVICE_KEY,import.meta.env.TEMPLATE_KEY , {
       from_name: form.name,
       to_name: 'Yasser Moussaoui',
       from_email: form.email,
       to_email: 'yassermoussaoui004@gmail.com',
       message: form.message,
     },
-      'EA00G0BRU2C3S1KeC')
+      import.meta.env.EMAIL_JS_KEY)
       .then(() => {
         setLoading(false);
         alert('Thank you. I will get back to you as soon as possible.');

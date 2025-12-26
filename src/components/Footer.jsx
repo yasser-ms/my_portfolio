@@ -34,7 +34,7 @@ const socialLinks = [
 const Footer = () => {
     return (
         <footer className='bg-tertiary py-8 sm:py-10 px-4 sm:px-6'>
-            <div className='max-w-7xl mx-auto flex flex-col items-center gap-5 sm:gap-6'>
+            <div className=' mx-auto flex flex-col items-center gap-5 sm:gap-6'>
 
                 {/* Social Links */}
                 <div className='flex gap-5 sm:gap-8'>
