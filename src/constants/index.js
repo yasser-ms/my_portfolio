@@ -193,8 +193,8 @@ const projects = [
     ],
     image: storeapi,
     source_code_link: "https://github.com/yasser-ms/Store_API",
-    live_demo_link: "https://store-api-demo.vercel.app",
-    documentation_link: "/projects/store-api",
+    live_demo_link: null,
+
     category: "Backend • API",
   },
 ];
