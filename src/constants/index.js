@@ -27,6 +27,8 @@ import {
   parking,
   photogallery,
   vaccine,
+  microServicesArch,
+  parkFlowLogo,
 } from "../assets";
 
 export const navLinks = [
@@ -173,10 +175,10 @@ const projects = [
       { name: "TailwindCSS", color: "text-indigo-600" },
       { name: "PostgreSQL", color: "text-indigo-400" },
     ],
-    image: "src/assets/parkFlowLogo.png", // Your project image
+    image: parkFlowLogo,
     source_code_link: "https://github.com/yasser-ms/park_Flow_Web_App",
-    live_demo_link: null, // Optional: link to live demo
-    documentation_link: "/projects/parkflow", // Link to your project documentation page
+    live_demo_link: null,
+    documentation_link: "/projects/parkflow",
     category: "Full Stack • Microservices",
   },
   {
@@ -189,29 +191,12 @@ const projects = [
       { name: "PostgreSQL", color: "text-green-500" },
       { name: "JWT", color: "text-purple-400" },
     ],
-    image: "src/assets/flaskPostman.webp",
+    image: storeapi,
     source_code_link: "https://github.com/yasser-ms/Store_API",
     live_demo_link: "https://store-api-demo.vercel.app",
     documentation_link: "/projects/store-api",
     category: "Backend • API",
   },
-  /*  {
-    name: "Enterprise Network",
-    description:
-      "Complete enterprise network infrastructure design with VLANs, routing protocols, firewall configuration, and security policies using Cisco Packet Tracer.",
-    tags: [
-      { name: "Cisco", color: "text-blue-400" },
-      { name: "Networking", color: "text-cyan-400" },
-      { name: "Security", color: "text-red-400" },
-      { name: "VLAN", color: "text-yellow-400" },
-    ],
-    image: "/images/enterprise-network.png",
-    source_code_link: "https://github.com/yourusername/enterprise-network",
-    live_demo_link: null,
-    documentation_link: "/projects/enterprise-network",
-    category: "Networking • Infrastructure",
-  }, */
-
 ];
 
 export { services, technologies, testimonials, projects };

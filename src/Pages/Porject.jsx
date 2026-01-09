@@ -22,7 +22,7 @@ import {
 } from "react-icons/fa";
 import { BiNetworkChart } from "react-icons/bi";
 import Footer from "../components/Footer";
-import projectData from "../constants/projectData.json";
+import { projectData } from "../constants/projectData";
 
 const iconMap = {
   FaServer,
