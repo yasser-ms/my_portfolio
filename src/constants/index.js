@@ -15,15 +15,11 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
-    profilePic,
+  profilePic,
   reactDev,
   Networking,
   backendDev,
@@ -32,7 +28,6 @@ import {
   photogallery,
   vaccine,
 } from "../assets";
-
 
 export const navLinks = [
   {
@@ -49,32 +44,34 @@ export const navLinks = [
   },
 ];
 
-
-
 const services = [
   {
     title: "Web Developer",
     icon: web,
     image: reactDev,
-    description: "Building modern, responsive web applications using React, Next.js, and Tailwind CSS with focus on user experience and performance."
+    description:
+      "Building modern, responsive web applications using React, Next.js, and Tailwind CSS with focus on user experience and performance.",
   },
   {
     title: "Backend Developer",
     icon: backend,
     image: backendDev,
-    description: "Creating robust APIs and microservices with Spring Boot, Node.js, Docker, and PostgreSQL for scalable applications."
+    description:
+      "Creating robust APIs and microservices with Spring Boot, Node.js, Docker, and PostgreSQL for scalable applications.",
   },
-    {
+  {
     title: "DevOps Enthusiast",
     icon: docker,
     image: profilePic,
-    description: "Setting up CI/CD pipelines, containerization with Docker, Kubernetes, and cloud deployments for efficient workflows."
+    description:
+      "Setting up CI/CD pipelines, containerization with Docker, Kubernetes, and cloud deployments for efficient workflows.",
   },
   {
     title: "Networking",
     icon: mobile,
     image: Networking,
-    description: "Configuring networks, firewalls, DNS, and understanding network security protocols and infrastructure."
+    description:
+      "Configuring networks, firewalls, DNS, and understanding network security protocols and infrastructure.",
   },
 ];
 
@@ -133,61 +130,6 @@ const technologies = [
   },
 ];
 
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
-
 const testimonials = [
   {
     testimonial:
@@ -215,139 +157,61 @@ const testimonials = [
   },
 ];
 
-
+// Example structure for your projects in constants/index.js
+// Add these fields to your existing projects array
 
 const projects = [
   {
+    name: "ParkFlow",
+    description:
+      "A production-ready microservices parking management system with CQRS pattern, JWT authentication, and full DevOps pipeline. Features 5 independent services with their own databases.",
+    tags: [
+      { name: "Python", color: "text-blue-400" },
+      { name: "Flask", color: "text-gray-300" },
+      { name: "React", color: "text-cyan-400" },
+      { name: "Docker", color: "text-blue-500" },
+      { name: "TailwindCSS", color: "text-indigo-600" },
+      { name: "PostgreSQL", color: "text-indigo-400" },
+    ],
+    image: "src/assets/parkFlowLogo.png", // Your project image
+    source_code_link: "https://github.com/yasser-ms/park_Flow_Web_App",
+    live_demo_link: null, // Optional: link to live demo
+    documentation_link: "/projects/parkflow", // Link to your project documentation page
+    category: "Full Stack • Microservices",
+  },
+  {
     name: "Store API",
     description:
-      "RESTful API built with Flask, SQLAlchemy, and JWT Authentication. Features database migrations, Docker containerization, Swagger documentation, and Postman testing. Deployed on Render.",
+      "RESTful API for e-commerce platform with product management, user authentication, shopping cart, and order processing. Built with clean architecture principles.",
     tags: [
-      {
-        name: "flask",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "green-text-gradient",
-      },
-      {
-        name: "postgresql",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "jwt",
-        color: "orange-text-gradient",
-      },
+      { name: "Python", color: "text-green-400" },
+      { name: "Flask", color: "text-gray-300" },
+      { name: "PostgreSQL", color: "text-green-500" },
+      { name: "JWT", color: "text-purple-400" },
     ],
-    image: storeapi,
+    image: "src/assets/flaskPostman.webp",
     source_code_link: "https://github.com/yasser-ms/Store_API",
-    live_demo_link: "https://store-api-ju13.onrender.com",
+    live_demo_link: "https://store-api-demo.vercel.app",
+    documentation_link: "/projects/store-api",
+    category: "Backend • API",
   },
-  {
-    name: "Smart Parking System",
-    description:
-      "Client-server architecture using Java/Python sockets for network communication and database management. Web interface built with HTML, CSS, JavaScript, PHP and PostgreSQL database.",
-    tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "python",
-        color: "green-text-gradient",
-      },
-      {
-        name: "postgresql",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "php",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: parking,
-    source_code_link: "https://github.com/yasser-ms/Projet_SAE/tree/yasser",
-    live_demo_link: "https://groupea5.alwaysdata.net",
-  },
-  {
-    name: "React Photo Gallery",
-    description:
-      "React/Vite application featuring dark mode, image search via Unsplash API, React Query for data fetching, reusable components, and global state management. Deployed on Netlify.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "green-text-gradient",
-      },
-      {
-        name: "react-query",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "api",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: photogallery,
-    source_code_link: "https://github.com/yasser-ms/Unsplash-API",
-    live_demo_link: "https://unsplashapiyasser.netlify.app",
-  },
-  {
-    name: "Vaccine Management App",
-    description:
-      "Intelligent child vaccine management application. Mobile and web app built with Flutter/Dart, Firebase for backend services, and Node.js for server logic. Final year project.",
-    tags: [
-      {
-        name: "flutter",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "dart",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: vaccine,
-    source_code_link: "https://github.com/yasser-ms",
-    live_demo_link: null,
-  },
-  {
+  /*  {
     name: "Enterprise Network",
     description:
-      "Design and deployment of a secure enterprise network infrastructure: IPv4, routing, switching, DNS, HTTP/Proxy, NAT, DHCP, SMTP/POP3, and ACL configuration.",
+      "Complete enterprise network infrastructure design with VLANs, routing protocols, firewall configuration, and security policies using Cisco Packet Tracer.",
     tags: [
-      {
-        name: "networking",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "cisco",
-        color: "green-text-gradient",
-      },
-      {
-        name: "security",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "infrastructure",
-        color: "orange-text-gradient",
-      },
+      { name: "Cisco", color: "text-blue-400" },
+      { name: "Networking", color: "text-cyan-400" },
+      { name: "Security", color: "text-red-400" },
+      { name: "VLAN", color: "text-yellow-400" },
     ],
-    image: Networking,
-    source_code_link: "https://github.com/yasser-ms",
+    image: "/images/enterprise-network.png",
+    source_code_link: "https://github.com/yourusername/enterprise-network",
     live_demo_link: null,
-  },
+    documentation_link: "/projects/enterprise-network",
+    category: "Networking • Infrastructure",
+  }, */
+
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, testimonials, projects };
